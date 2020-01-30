@@ -34,7 +34,7 @@ defmodule ContentfulRendererTest do
     document = load_document("embeds.json")
 
     renderer = fn node, _options ->
-      text = node["data"]["target"]["sys"]["id"]
+      text = node[:data][:target][:sys][:id]
       "<span>id: #{text}</span>"
     end
 
@@ -46,7 +46,7 @@ defmodule ContentfulRendererTest do
     document = load_document("embeds.json")
 
     renderer = fn node, _options ->
-      text = node["data"]["target"]["sys"]["id"]
+      text = node[:data][:target][:sys][:id]
       "<div>id: #{text}</div>"
     end
 
@@ -58,12 +58,12 @@ defmodule ContentfulRendererTest do
     json =
       Path.join([__DIR__, "documents", filename])
       |> File.read!()
-      |> Poison.decode!()
+      |> Poison.decode!(keys: :atoms)
 
     json
-    |> Map.fetch!("items")
+    |> Map.fetch!(:items)
     |> Enum.at(0)
-    |> Map.fetch!("fields")
-    |> Map.fetch!("body")
+    |> Map.fetch!(:fields)
+    |> Map.fetch!(:body)
   end
 end

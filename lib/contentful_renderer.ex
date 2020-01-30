@@ -23,34 +23,34 @@ defmodule ContentfulRenderer do
 
   ```
   iex> %{
-  ...>   "content" => [
+  ...>   :content => [
   ...>     %{
-  ...>       "content" => [
+  ...>       :content => [
   ...>         %{
-  ...>           "data" => %{},
-  ...>           "marks" => [],
-  ...>           "nodeType" => "text",
-  ...>           "value" => "Paragraph 1"
+  ...>           :data => %{},
+  ...>           :marks => [],
+  ...>           :nodeType => "text",
+  ...>           :value => "Paragraph 1"
   ...>         }
   ...>       ],
-  ...>       "data" => %{},
-  ...>       "nodeType" => "paragraph"
+  ...>       :data => %{},
+  ...>       :nodeType => "paragraph"
   ...>     },
   ...>     %{
-  ...>       "content" => [
+  ...>       :content => [
   ...>         %{
-  ...>           "data" => %{},
-  ...>           "marks" => [],
-  ...>           "nodeType" => "text",
-  ...>           "value" => "Paragraph 2"
+  ...>           :data => %{},
+  ...>           :marks => [],
+  ...>           :nodeType => "text",
+  ...>           :value => "Paragraph 2"
   ...>         }
   ...>       ],
-  ...>       "data" => %{},
-  ...>       "nodeType" => "paragraph"
+  ...>       :data => %{},
+  ...>       :nodeType => "paragraph"
   ...>     }
   ...>   ],
-  ...>   "data" => %{},
-  ...>   "nodeType" => "document"
+  ...>   :data => %{},
+  ...>   :nodeType => "document"
   ...> }
   ...> |> ContentfulRenderer.render()
   "<p>Paragraph 1</p><p>Paragraph 2</p>"
@@ -64,7 +64,7 @@ defmodule ContentfulRenderer do
     |> Enum.join("")
   end
 
-  def render(%{"nodeType" => nodeType} = node, options) do
+  def render(%{nodeType: nodeType} = node, options) do
     renderer =
       case nodeType do
         "document" ->
@@ -143,7 +143,7 @@ defmodule ContentfulRenderer do
   """
   def render_content(node, options \\ []) do
     node
-    |> Map.get("content", [])
+    |> Map.get(:content, [])
     |> render(options)
   end
 
@@ -188,7 +188,7 @@ defmodule ContentfulRenderer do
   end
 
   defp default_hyperlink_node_renderer(node, options) do
-    uri = node["data"]["uri"]
+    uri = node[:data][:uri]
     "<a href=\"#{uri}\">#{render_content(node, options)}</a>"
   end
 
@@ -205,10 +205,10 @@ defmodule ContentfulRenderer do
   end
 
   defp default_text_node_renderer(node, options) do
-    text = Map.fetch!(node, "value")
+    text = Map.fetch!(node, :value)
 
     node
-    |> Map.get("marks", [])
+    |> Map.get(:marks, [])
     |> render_marks(text, options)
   end
 
@@ -233,7 +233,7 @@ defmodule ContentfulRenderer do
     |> Enum.reduce(
       text,
       fn mark, text_acc ->
-        type = Map.fetch!(mark, "type")
+        type = Map.fetch!(mark, :type)
 
         case type do
           "bold" ->
