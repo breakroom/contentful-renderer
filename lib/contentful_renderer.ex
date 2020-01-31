@@ -205,7 +205,10 @@ defmodule ContentfulRenderer do
   end
 
   defp default_text_node_renderer(node, options) do
-    text = Map.fetch!(node, :value)
+    text =
+      Map.fetch!(node, :value)
+      |> Phoenix.HTML.html_escape()
+      |> Phoenix.HTML.safe_to_string()
 
     node
     |> Map.get(:marks, [])

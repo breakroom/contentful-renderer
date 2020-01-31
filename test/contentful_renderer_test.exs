@@ -6,7 +6,7 @@ defmodule ContentfulRendererTest do
     document = load_document("paragraphs.json")
 
     assert ContentfulRenderer.render(document, []) ==
-             "<p>This is a first blog post to <u><b>act</b></u> as a test.</p><p>Here's some new <u>stuff</u>.</p>"
+             "<p>This is a first blog post to <u><b>act</b></u> as a test.</p><p>Here&#39;s some new <u>stuff</u>.</p>"
   end
 
   test "rendering a document with headings" do
@@ -27,7 +27,7 @@ defmodule ContentfulRendererTest do
     document = load_document("embeds.json")
 
     assert ContentfulRenderer.render(document, []) ==
-             "<p>Here's an <a href=\"http://www.example.org\">inline link</a>, and here's an embedded link:.</p>"
+             "<p>Here&#39;s an <a href=\"http://www.example.org\">inline link</a>, and here&#39;s an embedded link:.</p>"
   end
 
   test "rendering a document with embeds with a custom embedded-entry-inline renderer" do
@@ -39,7 +39,7 @@ defmodule ContentfulRendererTest do
     end
 
     assert ContentfulRenderer.render(document, embedded_entry_inline_node_renderer: renderer) ==
-             "<p>Here's an <a href=\"http://www.example.org\">inline link</a>, and here's an embedded link:<span>id: 36uwIhhxw8rnyhsvr7IkZs</span>.</p>"
+             "<p>Here&#39;s an <a href=\"http://www.example.org\">inline link</a>, and here&#39;s an embedded link:<span>id: 36uwIhhxw8rnyhsvr7IkZs</span>.</p>"
   end
 
   test "rendering a document with embeds with a custom embedded-entry-block renderer" do
@@ -51,7 +51,14 @@ defmodule ContentfulRendererTest do
     end
 
     assert ContentfulRenderer.render(document, embedded_entry_block_node_renderer: renderer) ==
-             "<p>Here's an <a href=\"http://www.example.org\">inline link</a>, and here's an embedded link:.</p><div>id: 36uwIhhxw8rnyhsvr7IkZs</div>"
+             "<p>Here&#39;s an <a href=\"http://www.example.org\">inline link</a>, and here&#39;s an embedded link:.</p><div>id: 36uwIhhxw8rnyhsvr7IkZs</div>"
+  end
+
+  test "rendering a document with special characters" do
+    document = load_document("special_characters.json")
+
+    assert ContentfulRenderer.render(document, []) ==
+             "<p>Some &amp; (ampersands), 😬 (emoji), ☃ (unicode snowman) and &lt;script&gt;alert(&quot;alert&quot;);&lt;/script&gt; (script tags)</p>"
   end
 
   defp load_document(filename) do
