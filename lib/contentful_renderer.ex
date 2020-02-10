@@ -135,6 +135,13 @@ defmodule ContentfulRenderer do
             &default_embedded_entry_block_node_renderer/2
           )
 
+        "embedded-asset-block" ->
+          Keyword.get(
+            options,
+            :embedded_asset_block_node_renderer,
+            &default_embedded_asset_block_node_renderer/2
+          )
+
         "hr" ->
           Keyword.get(options, :hr_node_renderer, &default_hr_node_renderer/2)
       end
@@ -214,6 +221,12 @@ defmodule ContentfulRenderer do
 
   defp default_embedded_entry_block_node_renderer(_node, _options) do
     Logger.warn("Using null renderer for embedded-entry-block node")
+
+    ""
+  end
+
+  defp default_embedded_asset_block_node_renderer(_node, _options) do
+    Logger.warn("Using null renderer for embedded-asset-block node")
 
     ""
   end
