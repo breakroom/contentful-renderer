@@ -94,6 +94,9 @@ defmodule ContentfulRenderer do
         "heading-6" ->
           Keyword.get(options, :heading_6_node_renderer, &default_heading_6_node_renderer/2)
 
+        "blockquote" ->
+          Keyword.get(options, :blockquote_node_renderer, &default_blockquote_node_renderer/2)
+
         "unordered-list" ->
           Keyword.get(
             options,
@@ -173,6 +176,10 @@ defmodule ContentfulRenderer do
 
   defp default_heading_6_node_renderer(node, options) do
     "<h6>#{render_content(node, options)}</h6>"
+  end
+
+  defp default_blockquote_node_renderer(node, options) do
+    "<blockquote>#{render_content(node, options)}</blockquote>"
   end
 
   defp default_unordered_list_node_renderer(node, options) do
