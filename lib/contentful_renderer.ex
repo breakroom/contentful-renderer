@@ -134,6 +134,9 @@ defmodule ContentfulRenderer do
             :embedded_entry_block_node_renderer,
             &default_embedded_entry_block_node_renderer/2
           )
+
+        "hr" ->
+          Keyword.get(options, :hr_node_renderer, &default_hr_node_renderer/2)
       end
 
     renderer.(node, options)
@@ -180,6 +183,10 @@ defmodule ContentfulRenderer do
 
   defp default_blockquote_node_renderer(node, options) do
     "<blockquote>#{render_content(node, options)}</blockquote>"
+  end
+
+  defp default_hr_node_renderer(_node, _options) do
+    "<hr />"
   end
 
   defp default_unordered_list_node_renderer(node, options) do
