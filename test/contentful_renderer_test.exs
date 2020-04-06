@@ -22,7 +22,7 @@ defmodule ContentfulRendererTest do
     document = load_document("headings_with_marks.json")
 
     assert ContentfulRenderer.render_document(document, heading_ids: true) ==
-             "<h1 id=\"heading-1-containing-bold-italic-underline-and-bold-and-italic-combined\">Heading 1 containing <b>bold</b>, <i>italic</i>, <u>underline</u> and <i><b>bold and italic combined</b></i></h1><h2 id=\"heading-2\">Heading 2</h2><h3 id=\"heading-3\">Heading 3</h3><p></p>"
+             "<h1 id=\"heading-1-including-containing-bold-italic-underline-and-bold-and-italic-combined\">Heading 1 (including &amp;) containing <b>bold</b>, <i>italic</i>, <u>underline</u> and <i><b>bold and italic combined</b></i></h1><h2 id=\"heading-2\">Heading 2</h2><h3 id=\"heading-3\">Heading 3</h3><p></p>"
   end
 
   test "rendering a document with lists" do

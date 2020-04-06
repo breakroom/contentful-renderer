@@ -47,7 +47,7 @@
               "content": [
                 {
                   "nodeType": "text",
-                  "value": "Heading 1 containing ",
+                  "value": "Heading 1 (including &) containing ",
                   "marks": [],
                   "data": {}
                 },

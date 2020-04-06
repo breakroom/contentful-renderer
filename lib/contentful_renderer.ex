@@ -1,7 +1,7 @@
 defmodule ContentfulRenderer do
   require Logger
 
-  import Phoenix.HTML, only: [safe_to_string: 1, html_escape: 1]
+  import Phoenix.HTML, only: [safe_to_string: 1, html_escape: 1, raw: 1]
   import Phoenix.HTML.Tag, only: [content_tag: 2, content_tag: 3]
   import ContentfulRenderer.SafeHelpers
 
@@ -272,10 +272,11 @@ defmodule ContentfulRenderer do
 
   defp default_text_node_renderer(node, options) do
     render_marks = Keyword.get(options, :render_marks, true)
+    escape_html = Keyword.get(options, :escape_html, true)
 
     text =
       Map.fetch!(node, :value)
-      |> html_escape()
+      |> maybe_escape_html(escape_html)
 
     maybe_render_marks(node, text, options, render_marks)
   end
@@ -306,6 +307,14 @@ defmodule ContentfulRenderer do
     |> render_marks(text, options)
   end
 
+  defp maybe_escape_html(text, true) do
+    text |> html_escape()
+  end
+
+  defp maybe_escape_html(text, false) do
+    text |> raw
+  end
+
   defp render_marks(marks, text, options) do
     marks
     |> Enum.reduce(
@@ -333,7 +342,10 @@ defmodule ContentfulRenderer do
   defp heading_attributes(node, options) do
     case Keyword.get(options, :heading_ids, false) do
       true ->
-        options = Keyword.put(options, :render_marks, false)
+        options =
+          options
+          |> Keyword.put(:render_marks, false)
+          |> Keyword.put(:escape_html, false)
 
         id =
           node
