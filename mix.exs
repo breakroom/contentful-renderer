@@ -1,7 +1,7 @@
 defmodule ContentfulRenderer.MixProject do
   use Mix.Project
 
-  @version "0.3.3"
+  @version "0.4.0"
 
   def project do
     [
