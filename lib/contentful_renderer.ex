@@ -10,18 +10,23 @@ defmodule ContentfulRenderer do
   HTML.
 
   It accepts custom renderers for each node type, passed in as
-  `Keyword`s in the `options` parameter. To override the `heading-1` renderer, pass in:
+  `Keyword`s in the `options` parameter. To override the `heading-1`
+  renderer, pass in:
 
   ```
   heading_1_node_renderer: fn node, options ->
-    "<h1>\#{ContentfulRenderer.render_content(node, options)\}</h1>"
+    Phoenix.HTML.Tag.content_tag(:h1) do
+      ContentfulRenderer.render_content(node, options)
+    end
   end
   ```
 
-  By default it renders `embedded-entry-inline` and
-  `embedded-entry-block` as blank, because these usually require
-  local knowledge about the content model to render usefully. When
-  this happens, `Logger` will warn.
+  Renderers need to return a `Phoenix.HTML.Safe.t()` or they're treated as an
+  unsafe string and HTML escaped.
+
+  By default it renders `embedded-entry-inline` and `embedded-entry-block` as
+  blank, because these usually require local knowledge about the content
+  model to render usefully. When this happens, `Logger` will warn.
 
   ## Examples
 
