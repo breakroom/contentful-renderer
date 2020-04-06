@@ -330,19 +330,21 @@ defmodule ContentfulRenderer do
     )
   end
 
-  defp heading_attributes(node, [heading_ids: true] = options) do
-    options = Keyword.put(options, :render_marks, false)
+  defp heading_attributes(node, options) do
+    case Keyword.get(options, :heading_ids, false) do
+      true ->
+        options = Keyword.put(options, :render_marks, false)
 
-    id =
-      node
-      |> render_content(options)
-      |> safe_to_string()
-      |> Slug.slugify()
+        id =
+          node
+          |> render_content(options)
+          |> safe_to_string()
+          |> Slug.slugify()
 
-    [id: id]
-  end
+        [id: id]
 
-  defp heading_attributes(_node, _options) do
-    []
+      false ->
+        []
+    end
   end
 end
