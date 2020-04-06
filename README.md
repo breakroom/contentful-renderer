@@ -13,7 +13,7 @@ Read [the docs](https://hexdocs.pm/contentful_renderer) for more info.
 ```elixir
 def deps do
   [
-    {:contentful_renderer, "~> 0.4.1"}
+    {:contentful_renderer, "~> 0.4.2"}
   ]
 end
 ```
