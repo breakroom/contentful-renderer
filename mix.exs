@@ -41,7 +41,7 @@ defmodule ContentfulRenderer.MixProject do
     [
       {:phoenix_html, "~> 2.0"},
       {:slugify, "~> 1.3"},
-      {:poison, "~> 3.1", only: :test},
+      {:poison, "~> 4.0", only: :test},
       {:ex_doc, "~> 0.21", only: :dev, runtime: false}
     ]
   end
