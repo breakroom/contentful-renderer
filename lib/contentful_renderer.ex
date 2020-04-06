@@ -1,6 +1,10 @@
 defmodule ContentfulRenderer do
   require Logger
 
+  import Phoenix.HTML, only: [safe_to_string: 1, html_escape: 1]
+  import Phoenix.HTML.Tag, only: [content_tag: 2, content_tag: 3]
+  import ContentfulRenderer.SafeHelpers
+
   @doc """
   Renders a Contentful node, in a tree of `Map`s and `List`s, to
   HTML.
@@ -52,16 +56,23 @@ defmodule ContentfulRenderer do
   ...>   :data => %{},
   ...>   :nodeType => "document"
   ...> }
-  ...> |> ContentfulRenderer.render()
+  ...> |> ContentfulRenderer.render_document()
   "<p>Paragraph 1</p><p>Paragraph 2</p>"
   ```
   """
-  def render(node, options \\ [])
+  def render_document(document, options \\ []) do
+    render_content(document, options)
+    |> safe_to_string()
+  end
 
+  @doc """
+  Behaves the same as `render_document/2`, but returns a
+  `Phoenix.HTML.Safe.t` tuple.
+  """
   def render(content, options) when is_list(content) do
     content
     |> Enum.map(&render(&1, options))
-    |> Enum.join("")
+    |> join_safes()
   end
 
   def render(%{nodeType: nodeType} = node, options) do
@@ -161,56 +172,79 @@ defmodule ContentfulRenderer do
   end
 
   defp default_paragraph_node_renderer(node, options) do
-    "<p>#{render_content(node, options)}</p>"
+    content_tag(:p) do
+      render_content(node, options)
+    end
   end
 
   defp default_heading_1_node_renderer(node, options) do
-    "<h1>#{render_content(node, options)}</h1>"
+    default_heading_node_renderer(node, options, :h1)
   end
 
   defp default_heading_2_node_renderer(node, options) do
-    "<h2>#{render_content(node, options)}</h2>"
+    default_heading_node_renderer(node, options, :h2)
   end
 
   defp default_heading_3_node_renderer(node, options) do
-    "<h3>#{render_content(node, options)}</h3>"
+    default_heading_node_renderer(node, options, :h3)
   end
 
   defp default_heading_4_node_renderer(node, options) do
-    "<h4>#{render_content(node, options)}</h4>"
+    default_heading_node_renderer(node, options, :h4)
   end
 
   defp default_heading_5_node_renderer(node, options) do
-    "<h5>#{render_content(node, options)}</h5>"
+    default_heading_node_renderer(node, options, :h5)
   end
 
   defp default_heading_6_node_renderer(node, options) do
-    "<h6>#{render_content(node, options)}</h6>"
+    default_heading_node_renderer(node, options, :h6)
+  end
+
+  defp default_heading_node_renderer(node, options, tag) do
+    attrs = heading_attributes(node, options)
+
+    content_tag tag, attrs do
+      render_content(node, options)
+    end
   end
 
   defp default_blockquote_node_renderer(node, options) do
-    "<blockquote>#{render_content(node, options)}</blockquote>"
+    content_tag(:blockquote) do
+      render_content(node, options)
+    end
   end
 
   defp default_hr_node_renderer(_node, _options) do
-    "<hr />"
+    content_tag(:hr) do
+      nil
+    end
   end
 
   defp default_unordered_list_node_renderer(node, options) do
-    "<ul>#{render_content(node, options)}</ul>"
+    content_tag(:ul) do
+      render_content(node, options)
+    end
   end
 
   defp default_ordered_list_node_renderer(node, options) do
-    "<ol>#{render_content(node, options)}</ol>"
+    content_tag(:ol) do
+      render_content(node, options)
+    end
   end
 
   defp default_list_item_node_renderer(node, options) do
-    "<li>#{render_content(node, options)}</li>"
+    content_tag(:li) do
+      render_content(node, options)
+    end
   end
 
   defp default_hyperlink_node_renderer(node, options) do
     uri = node[:data][:uri]
-    "<a href=\"#{uri}\">#{render_content(node, options)}</a>"
+
+    content_tag(:a, href: uri) do
+      render_content(node, options)
+    end
   end
 
   defp default_embedded_entry_inline_node_renderer(_node, _options) do
@@ -232,30 +266,39 @@ defmodule ContentfulRenderer do
   end
 
   defp default_text_node_renderer(node, options) do
+    render_marks = Keyword.get(options, :render_marks, true)
+
     text =
       Map.fetch!(node, :value)
-      |> Phoenix.HTML.html_escape()
-      |> Phoenix.HTML.safe_to_string()
+      |> html_escape()
 
-    node
-    |> Map.get(:marks, [])
-    |> render_marks(text, options)
+    maybe_render_marks(node, text, options, render_marks)
   end
 
   defp default_bold_mark_renderer(text, _options) do
-    "<b>#{text}</b>"
+    content_tag(:b, text)
   end
 
   defp default_underline_mark_renderer(text, _options) do
-    "<u>#{text}</u>"
+    content_tag(:u, text)
   end
 
   defp default_code_mark_renderer(text, _options) do
-    "<code>#{text}</code>"
+    content_tag(:code, text)
   end
 
   defp default_italic_mark_renderer(text, _options) do
-    "<i>#{text}</i>"
+    content_tag(:i, text)
+  end
+
+  defp maybe_render_marks(_node, text, _options, false) do
+    text
+  end
+
+  defp maybe_render_marks(node, text, options, true) do
+    node
+    |> Map.get(:marks, [])
+    |> render_marks(text, options)
   end
 
   defp render_marks(marks, text, options) do
@@ -280,5 +323,21 @@ defmodule ContentfulRenderer do
         end
       end
     )
+  end
+
+  defp heading_attributes(node, [heading_ids: true] = options) do
+    options = Keyword.put(options, :render_marks, false)
+
+    id =
+      node
+      |> render_content(options)
+      |> safe_to_string()
+      |> Slug.slugify()
+
+    [id: id]
+  end
+
+  defp heading_attributes(_node, _options) do
+    []
   end
 end
