@@ -1,18 +1,58 @@
-on: push
-
+name: test
+on: [push]
 jobs:
   test:
     runs-on: ubuntu-latest
-    name: OTP ${{matrix.otp}} / Elixir ${{matrix.elixir}}
+
     strategy:
       matrix:
-        otp: [21.3, 22.3]
-        elixir: [1.9.4, 1.10.2]
+        include:
+          - elixir: 1.12.x
+            otp: 24.x
+            check_formatted: true
+          - elixir: 1.12.x
+            otp: 23.x
+          - elixir: 1.12.x
+            otp: 22.x
+          - elixir: 1.11.x
+            otp: 24.x
+          - elixir: 1.11.x
+            otp: 23.x
+          - elixir: 1.11.x
+            otp: 22.x
+          - elixir: 1.11.x
+            otp: 21.x
+          - elixir: 1.10.x
+            otp: 23.x
+          - elixir: 1.9.x
+            otp: 22.x
+
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-elixir@v1
+
+      - uses: erlef/setup-elixir@v1
+        id: setup-elixir
         with:
-          otp-version: ${{matrix.otp}}
-          elixir-version: ${{matrix.elixir}}
-      - run: mix deps.get
-      - run: mix test
+          otp-version: ${{ matrix.otp }}
+          elixir-version: ${{ matrix.elixir }}
+
+      - name: Retrieve Mix Dependencies Cache
+        uses: actions/cache@v1
+        id: mix-cache
+        with:
+          path: deps
+          key: ${{ runner.os }}-${{ steps.setup-elixir.outputs.otp-version }}-${{ steps.setup-elixir.outputs.elixir-version }}-mix-${{ hashFiles(format('{0}{1}', github.workspace, '/mix.lock')) }}
+
+      - name: Install Mix Dependencies
+        if: steps.mix-cache.outputs.cache-hit != 'true'
+        run: |
+          mix local.rebar --force
+          mix local.hex --force
+          mix deps.get
+
+      - name: Check Formatting
+        run: mix format --check-formatted
+        if: matrix.check_formatted
+
+      - name: Run tests
+        run: mix test
