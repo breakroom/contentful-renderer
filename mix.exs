@@ -10,7 +10,7 @@ defmodule ContentfulRenderer.MixProject do
       elixir: "~> 1.9",
       deps: deps(),
       name: "Contentful Renderer",
-      source_url: "https://github.com/poplarhq/contentful_renderer",
+      source_url: "https://github.com/breakroom/contentful_renderer",
       description: "Rich Text to HTML renderer for Contentful CMS",
       package: package(),
       docs: docs()
@@ -21,7 +21,7 @@ defmodule ContentfulRenderer.MixProject do
     [
       licenses: ["MIT"],
       maintainers: ["Tom Taylor"],
-      links: %{"GitHub" => "https://github.com/poplarhq/contentful_renderer"}
+      links: %{"GitHub" => "https://github.com/breakroom/contentful_renderer"}
     ]
   end
 
