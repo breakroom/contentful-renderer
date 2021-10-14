@@ -7,7 +7,7 @@ defmodule ContentfulRenderer.MixProject do
     [
       app: :contentful_renderer,
       version: @version,
-      elixir: "~> 1.8",
+      elixir: "~> 1.9",
       deps: deps(),
       name: "Contentful Renderer",
       source_url: "https://github.com/poplarhq/contentful_renderer",
