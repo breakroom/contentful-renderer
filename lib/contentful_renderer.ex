@@ -32,34 +32,34 @@ defmodule ContentfulRenderer do
 
   ```
   iex> %{
-  ...>   :content => [
+  ...>   "content" => [
   ...>     %{
-  ...>       :content => [
+  ...>       "content" => [
   ...>         %{
-  ...>           :data => %{},
-  ...>           :marks => [],
-  ...>           :nodeType => "text",
-  ...>           :value => "Paragraph 1"
+  ...>           "data" => %{},
+  ...>           "marks" => [],
+  ...>           "nodeType" => "text",
+  ...>           "value" => "Paragraph 1"
   ...>         }
   ...>       ],
-  ...>       :data => %{},
-  ...>       :nodeType => "paragraph"
+  ...>       "data" => %{},
+  ...>       "nodeType" => "paragraph"
   ...>     },
   ...>     %{
-  ...>       :content => [
+  ...>       "content" => [
   ...>         %{
-  ...>           :data => %{},
-  ...>           :marks => [],
-  ...>           :nodeType => "text",
-  ...>           :value => "Paragraph 2"
+  ...>           "data" => %{},
+  ...>           "marks" => [],
+  ...>           "nodeType" => "text",
+  ...>           "value" => "Paragraph 2"
   ...>         }
   ...>       ],
-  ...>       :data => %{},
-  ...>       :nodeType => "paragraph"
+  ...>       "data" => %{},
+  ...>       "nodeType" => "paragraph"
   ...>     }
   ...>   ],
-  ...>   :data => %{},
-  ...>   :nodeType => "document"
+  ...>   "data" => %{},
+  ...>   "nodeType" => "document"
   ...> }
   ...> |> ContentfulRenderer.render_document()
   "<p>Paragraph 1</p><p>Paragraph 2</p>"
@@ -80,7 +80,7 @@ defmodule ContentfulRenderer do
     |> join_safes()
   end
 
-  def render(%{nodeType: nodeType} = node, options) do
+  def render(%{"nodeType" => nodeType} = node, options) do
     renderer =
       case nodeType do
         "document" ->
@@ -172,7 +172,7 @@ defmodule ContentfulRenderer do
   """
   def render_content(node, options \\ []) do
     node
-    |> Map.get(:content, [])
+    |> Map.get("content", [])
     |> render(options)
   end
 
@@ -245,7 +245,7 @@ defmodule ContentfulRenderer do
   end
 
   defp default_hyperlink_node_renderer(node, options) do
-    uri = node[:data][:uri]
+    uri = node["data"]["uri"]
 
     content_tag(:a, href: uri) do
       render_content(node, options)
@@ -275,7 +275,7 @@ defmodule ContentfulRenderer do
     escape_html = Keyword.get(options, :escape_html, true)
 
     text =
-      Map.fetch!(node, :value)
+      Map.fetch!(node, "value")
       |> maybe_escape_html(escape_html)
 
     maybe_render_marks(node, text, options, render_marks)
@@ -303,7 +303,7 @@ defmodule ContentfulRenderer do
 
   defp maybe_render_marks(node, text, options, true) do
     node
-    |> Map.get(:marks, [])
+    |> Map.get("marks", [])
     |> render_marks(text, options)
   end
 
@@ -320,7 +320,7 @@ defmodule ContentfulRenderer do
     |> Enum.reduce(
       text,
       fn mark, text_acc ->
-        type = Map.fetch!(mark, :type)
+        type = Map.fetch!(mark, "type")
 
         case type do
           "bold" ->
