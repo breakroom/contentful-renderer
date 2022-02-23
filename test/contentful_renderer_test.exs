@@ -80,6 +80,18 @@ defmodule ContentfulRendererTest do
              "<p>Some &amp; (ampersands), 😬 (emoji), ☃ (unicode snowman) and &lt;script&gt;alert(&quot;alert&quot;);&lt;/script&gt; (script tags)</p>"
   end
 
+  test "rendering a document with an asset-hyperlink node" do
+    document = load_document("asset_hyperlink.json")
+
+    assert ContentfulRenderer.render_document(document, []) == "<p>Blah this is a test</p>"
+  end
+
+  test "rendering a document with an entry-hyperlink node" do
+    document = load_document("entry_hyperlink.json")
+
+    assert ContentfulRenderer.render_document(document, []) == "<p>This is a test link</p>"
+  end
+
   defp load_document(filename) do
     json =
       Path.join([__DIR__, "documents", filename])

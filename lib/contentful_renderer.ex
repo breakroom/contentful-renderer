@@ -160,6 +160,25 @@ defmodule ContentfulRenderer do
 
         "hr" ->
           Keyword.get(options, :hr_node_renderer, &default_hr_node_renderer/2)
+
+        "entry-hyperlink" ->
+          Keyword.get(
+            options,
+            :entry_hyperlink_node_renderer,
+            &default_entry_hyperlink_node_renderer/2
+          )
+
+        "asset-hyperlink" ->
+          Keyword.get(
+            options,
+            :asset_hyperlink_node_renderer,
+            &default_asset_hyperlink_node_renderer/2
+          )
+
+        unknown_node ->
+          Logger.warn("Skipping rendering unexpected node type: #{unknown_node}")
+
+          fn _, _ -> nil end
       end
 
     renderer.(node, options)
@@ -268,6 +287,18 @@ defmodule ContentfulRenderer do
     Logger.warn("Using null renderer for embedded-asset-block node")
 
     ""
+  end
+
+  def default_asset_hyperlink_node_renderer(node, options) do
+    Logger.warn("Using plain text renderer for asset-hyperlink node")
+
+    render_content(node, options)
+  end
+
+  def default_entry_hyperlink_node_renderer(node, options) do
+    Logger.warn("Using plain text renderer for entry-hyperlink node")
+
+    render_content(node, options)
   end
 
   defp default_text_node_renderer(node, options) do

@@ -1,0 +1,1971 @@
+{
+  "sys": {
+    "type": "Array"
+  },
+  "total": 1,
+  "skip": 0,
+  "limit": 1,
+  "items": [
+    {
+      "metadata": {
+        "tags": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "c54s1z7ob450"
+          }
+        },
+        "type": "Entry",
+        "id": "5TnFwuvif097yIWRcuEdOF",
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "revision": 0,
+        "createdAt": "2022-02-23T15:19:40.235Z",
+        "updatedAt": "2022-02-23T15:24:24.120Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "locale": "en-GB"
+      },
+      "fields": {
+        "title": "Testing",
+        "slug": "testing",
+        "publishDate": "2022-02-01T00:00+00:00",
+        "excerpt": "DO NOT PUBLISH THANK YOU PLEASE OK THANKS OK CHEERS",
+        "body": {
+          "nodeType": "document",
+          "data": {},
+          "content": [
+            {
+              "nodeType": "paragraph",
+              "content": [
+                {
+                  "nodeType": "text",
+                  "value": "This is a ",
+                  "marks": [],
+                  "data": {}
+                },
+                {
+                  "nodeType": "entry-hyperlink",
+                  "content": [
+                    {
+                      "nodeType": "text",
+                      "value": "test link",
+                      "marks": [],
+                      "data": {}
+                    }
+                  ],
+                  "data": {
+                    "target": {
+                      "sys": {
+                        "id": "1djIqzcJl7eS2ZTsYA7KZs",
+                        "type": "Link",
+                        "linkType": "Entry"
+                      }
+                    }
+                  }
+                },
+                {
+                  "nodeType": "text",
+                  "value": "",
+                  "marks": [],
+                  "data": {}
+                }
+              ],
+              "data": {}
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "includes": {
+    "Entry": [
+      {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "c54s1z7ob450"
+            }
+          },
+          "type": "Entry",
+          "id": "1djIqzcJl7eS2ZTsYA7KZs",
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "blogPost"
+            }
+          },
+          "revision": 0,
+          "createdAt": "2022-02-22T10:33:45.875Z",
+          "updatedAt": "2022-02-23T15:23:10.911Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "locale": "en-GB"
+        },
+        "fields": {
+          "title": "How to write a killer CV!",
+          "slug": "how-to-write-a-killer-cv",
+          "publishDate": "2022-02-17T00:00+00:00",
+          "excerpt": "We've covered tips on how to get a job interview. Now we are digging a little deeper into the CV with our advice on what makes a good one.",
+          "body": {
+            "nodeType": "document",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Did you know on average, recruiters will spend no more than 5-10 seconds looking at your CV?",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "We've covered tips on how to get a job interview.",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {
+                      "uri": "https://www.breakroom.cc/blog/7-quick-tips-for-getting-a-job-interview"
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " ",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "Now we are digging a little deeper into the CV with our advice on what makes a great one.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "heading-3",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "What is a CV?",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "\n",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "A short document standing in the way between you and that all-important interview.\n",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "CV stands for curriculum vitae, which is Latin, meaning: \"course of life\". Because getting a job isn't stressful enough, someone had to add Latin into the mix. 🤷",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "What is important is that this is the document that tells an employer about you  Your experience, education, abilities and your personality.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "heading-3",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "How long should a CV be? ",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "📜",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "There are no hard and fast rules. But, the person reading it doesn't have a lot of time. So try and keep it short, our advice would be to keep it to one page, two at most.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Space on a CV is precious, so keep it relevant and recent. You don't need to cover your entire education. Cover what is relevant and recent, such as your important academic achievements.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "If in doubt, ask yourself if the information sells you. If it doesn't cut it out.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "heading-3",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "What to include in a CV",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Include:",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " ",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "unordered-list",
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Your full name ",
+                            "marks": [],
+                            "data": {}
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Home address ",
+                            "marks": [],
+                            "data": {}
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Mobile number ",
+                            "marks": [],
+                            "data": {}
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Email address",
+                            "marks": [],
+                            "data": {}
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Don't include:",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "unordered-list",
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Date of birth",
+                            "marks": [],
+                            "data": {}
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Unless the job advert asks for one, don't include a photograph",
+                            "marks": [],
+                            "data": {}
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "list-item",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Social profiles ",
+                            "marks": [],
+                            "data": {}
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "heading-4",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "\nStart with a profile:",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "A CV profile is a short sentence or two that describes you and helps you stand out from the crowd.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Such as: ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "\"",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "I am enthusiastic, self-motivated, and responsible. I am outgoing and thrive in customer-facing roles\"",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      },
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "\n",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Try to make your profile relevant for the job. For example, if the job is working with people, say ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "\"I like working with people\"",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      },
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ".",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Keep CV personal statements short and snappy and try to inject your personality. This is your first impression so be yourself.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "heading-4",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "\nEducation:",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "\nList and date all your education. Put the most recent first with more detail. Such as qualifications and grades. If you're still studying put that top of the list. The easy rule here, is again, ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "relevant and recent.",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "If you've done or are doing a degree, for example, don't waste a lot of space on your GCSEs. ",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "heading-4",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "👷 Work experience:  ",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "This depends on how much experience you have. The golden rule is, yet again, relevant and recent. Put your most recent experience first. Highlight the duties that overlap with the role/s you are applying for.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "\n",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "Top tip:",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " If you have lots of relevant work experience. ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "Put this section before your education.",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "\n",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Include your job title and the name of the company. How long you worked there and your key responsibilities. The more these are relevant to the job you're applying for the more detail you should add.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "heading-3",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Achievements / Skills: ",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "This is a bit of a catch-all section where you can list your ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "relevant ",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "skills. There is no point in listing your Liam Neeson skill set when applying to be a barista.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "embedded-asset-block",
+                "content": [],
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "6ZAoWBzGZm95rVxgDy9FgS",
+                      "type": "Link",
+                      "linkType": "Asset"
+                    }
+                  }
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "The key skills that you list should be ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "relevant",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " to the job / a potential benefit to the employer. Such as a second language, or an understanding of a technology or software they use.\n",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Anything that could save them time with training or can give you added value. ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "Don't ",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "exaggerate your skills and where possible focus on job-specific skills.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "heading-4",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Interests:",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Stop, it's a TRAP!",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "\n",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Most employers are not interested in your interests. Again, unless it is relevant to the job. Don't bother telling them you like \"going to the cinema\" or \"playing the guitar\" if it's not relevant to the job they won't care.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Top tip: ",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "Make your interests job-relevant, enjoy playing football? Talk about how it's made you a good team player. Part of a drama group? Explain how this has helped your confidence in talking to people. Active on social media? Write about how you understand trends.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "heading-4",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "\nReferences:",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Have some good personal and professional references available. Ask them in advance if you can. Explain the sort of roles you are applying for and tell them why you want the job. It will make it easier for them to provide a good reference for you.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "\nYou don't need to provide the names of referees at this stage.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "If you have the space \"references available upon request\" is a good line, but if you're tight for space cut it out.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Check out our sample CV format",
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {
+                      "uri": "#sample-cv"
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "heading-3",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Here are our quick CV tips:",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "unordered-list",
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Title:",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {}
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": " Don't use CV or curriculum vitae. Let your name be the title.",
+                            "marks": [],
+                            "data": {}
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "unordered-list",
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Use headings:",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {}
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": " They break the CV. Use a large font and ",
+                            "marks": [],
+                            "data": {}
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": "bold",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {}
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": " text.",
+                            "marks": [],
+                            "data": {}
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "unordered-list",
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Fonts:",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {}
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": " Easy, don't use Comic Sans! Use something professional and easy to read, Calibri, Times New Roman or Arial. Pick a readable font size using size 4 to get a one page CV is not a \"hack\". 10 - 12 is acceptable. ",
+                            "marks": [],
+                            "data": {}
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "unordered-list",
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Relevant and recent:",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {}
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": " Keep your CV relevant and make sure the most recent is at the top.",
+                            "marks": [],
+                            "data": {}
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "unordered-list",
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Use bullet points to highlight things:",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {}
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": " It catches attention, but don't overuse them.",
+                            "marks": [],
+                            "data": {}
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "unordered-list",
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Name your saved CV:",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {}
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": " - Don't save it as \"CV\", use your name \"John-Smith-CV\".",
+                            "marks": [],
+                            "data": {}
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "unordered-list",
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Use spell check:",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {}
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": " Obvious, but nothing is more off-putting on a CV than a typo in the first line.",
+                            "marks": [],
+                            "data": {}
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "unordered-list",
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Tailor your CV:",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {}
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": " Know about the company before you apply. Look at their website and social media accounts. Google them and see if they have recent news, and check them out on Breakroom and discover what it is r",
+                            "marks": [],
+                            "data": {}
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": "eally ",
+                            "marks": [
+                              {
+                                "type": "italic"
+                              }
+                            ],
+                            "data": {}
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": "like.",
+                            "marks": [],
+                            "data": {}
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "unordered-list",
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Don't lie:",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {}
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": " This is obvious, tell the truth. You should sell yourself the best you can with your CV but don't oversell it.",
+                            "marks": [],
+                            "data": {}
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "unordered-list",
+                "content": [
+                  {
+                    "nodeType": "list-item",
+                    "content": [
+                      {
+                        "nodeType": "paragraph",
+                        "content": [
+                          {
+                            "nodeType": "text",
+                            "value": "Finally, if you have gaps in your CV try and explain them:",
+                            "marks": [
+                              {
+                                "type": "bold"
+                              }
+                            ],
+                            "data": {}
+                          },
+                          {
+                            "nodeType": "text",
+                            "value": " Nobody's CV is perfect, so be honest now as it is easier to do it now than later on.",
+                            "marks": [],
+                            "data": {}
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "One thing we've not covered is the ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "Cover Letter.",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " We'll be covering how to write a winning cover letter very soon, so watch out for that.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "If you’re applying for a new job check out the company on ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Breakroom",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ],
+                    "data": {
+                      "uri": "https://www.breakroom.cc/blog/Breakroom.cc"
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " and find out what it’s r",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "eally",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " like to work there. ",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "heading-2",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Find out how your current job scores! ",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Have your say and take the ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "Breakroom quiz",
+                        "marks": [
+                          {
+                            "type": "underline"
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {
+                      "uri": "https://www.breakroom.cc/good-jobs-survey"
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " today! ",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "We believe that everyone should have the right to know what a place is ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "really",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " like before they start. ",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "So share ",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "your review",
+                        "marks": [
+                          {
+                            "type": "underline"
+                          }
+                        ],
+                        "data": {}
+                      }
+                    ],
+                    "data": {
+                      "uri": "https://www.breakroom.cc/good-jobs-survey?utm_source=Blog&utm_medium=linkclick&utm_campaign=fast-food"
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": ", and see how it compares.",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [],
+                    "data": {}
+                  },
+                  {
+                    "nodeType": "hyperlink",
+                    "content": [
+                      {
+                        "nodeType": "text",
+                        "value": "*Did you know on average, recruiters will spend no more than 5-10 seconds looking at your CV?",
+                        "marks": [],
+                        "data": {}
+                      }
+                    ],
+                    "data": {
+                      "uri": "https://www.twinemployment.com/blog/8-surprising-statistics-about-cv-s-that-you-need-to-know"
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "heading-2",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Sample CV",
+                    "marks": [],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "embedded-asset-block",
+                "content": [],
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "6z96rLKdHfnO2tnwibBnpo",
+                      "type": "Link",
+                      "linkType": "Asset"
+                    }
+                  }
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Example CV Format ",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {}
+                  }
+                ],
+                "data": {}
+              }
+            ]
+          },
+          "splashImage": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3W8r9pSOumMkMoXO4jYDjR"
+            }
+          },
+          "author": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6SQSQnhlogFjzHGVNdj3lU"
+            }
+          }
+        }
+      }
+    ],
+    "Asset": [
+      {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "c54s1z7ob450"
+            }
+          },
+          "type": "Asset",
+          "id": "3W8r9pSOumMkMoXO4jYDjR",
+          "revision": 1,
+          "createdAt": "2022-02-23T09:16:57.870Z",
+          "updatedAt": "2022-02-23T09:17:23.089Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "locale": "en-GB"
+        },
+        "fields": {
+          "title": "How to write a killer CV",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/c54s1z7ob450/3W8r9pSOumMkMoXO4jYDjR/6d766a427a5d4e50a6fa3fefb772a0a4/Template-2.png",
+            "details": {
+              "size": 32691,
+              "image": {
+                "width": 1242,
+                "height": 650
+              }
+            },
+            "fileName": "Template-2.png",
+            "contentType": "image/png"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "c54s1z7ob450"
+            }
+          },
+          "type": "Asset",
+          "id": "6ZAoWBzGZm95rVxgDy9FgS",
+          "revision": 1,
+          "createdAt": "2022-02-22T10:38:46.049Z",
+          "updatedAt": "2022-02-22T10:39:34.106Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "locale": "en-GB"
+        },
+        "fields": {
+          "title": "Set of skills",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/c54s1z7ob450/6ZAoWBzGZm95rVxgDy9FgS/bfe2acec3b16d71d61e992dba198c62c/mememe_139469816c69f4843091941ebd70abda-1.jpg",
+            "details": {
+              "size": 28086,
+              "image": {
+                "width": 533,
+                "height": 299
+              }
+            },
+            "fileName": "mememe_139469816c69f4843091941ebd70abda-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "c54s1z7ob450"
+            }
+          },
+          "type": "Asset",
+          "id": "6z96rLKdHfnO2tnwibBnpo",
+          "revision": 1,
+          "createdAt": "2022-02-23T15:09:46.517Z",
+          "updatedAt": "2022-02-23T15:10:46.815Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "locale": "en-GB"
+        },
+        "fields": {
+          "title": "Jonh Smith Resume ",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/c54s1z7ob450/6z96rLKdHfnO2tnwibBnpo/c2de2449a12ae720bd916b04157c99b8/Jonh_Smith_Resume_23-02-2022-15-08-04.png",
+            "details": {
+              "size": 36967,
+              "image": {
+                "width": 1653,
+                "height": 2339
+              }
+            },
+            "fileName": "Jonh_Smith_Resume_23-02-2022-15-08-04.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    ]
+  }
+}
