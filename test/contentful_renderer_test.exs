@@ -92,6 +92,13 @@ defmodule ContentfulRendererTest do
     assert ContentfulRenderer.render_document(document, []) == "<p>This is a test link</p>"
   end
 
+  test "rendering a document with an table node" do
+    document = load_document("table.json")
+
+    assert ContentfulRenderer.render_document(document, []) ==
+             "<table><tr><th><p>Column 1</p></th><th><p>Column 2</p></th></tr><tr><td><p>Foo</p></td><td><p>Bar</p></td></tr><tr><td><p>Baz</p></td><td><p>Wossit</p></td></tr></table><p></p>"
+  end
+
   defp load_document(filename) do
     json =
       Path.join([__DIR__, "documents", filename])

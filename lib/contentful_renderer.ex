@@ -175,6 +175,34 @@ defmodule ContentfulRenderer do
             &default_asset_hyperlink_node_renderer/2
           )
 
+        "table" ->
+          Keyword.get(
+            options,
+            :table_node_renderer,
+            &default_table_node_renderer/2
+          )
+
+        "table-cell" ->
+          Keyword.get(
+            options,
+            :table_cell_node_renderer,
+            &default_table_cell_node_renderer/2
+          )
+
+        "table-row" ->
+          Keyword.get(
+            options,
+            :table_row_node_renderer,
+            &default_table_row_node_renderer/2
+          )
+
+        "table-header-cell" ->
+          Keyword.get(
+            options,
+            :table_header_cell_node_renderer,
+            &default_table_header_cell_node_renderer/2
+          )
+
         unknown_node ->
           Logger.warn("Skipping rendering unexpected node type: #{unknown_node}")
 
@@ -267,6 +295,30 @@ defmodule ContentfulRenderer do
     uri = node["data"]["uri"]
 
     content_tag(:a, href: uri) do
+      render_content(node, options)
+    end
+  end
+
+  defp default_table_node_renderer(node, options) do
+    content_tag(:table) do
+      render_content(node, options)
+    end
+  end
+
+  defp default_table_row_node_renderer(node, options) do
+    content_tag(:tr) do
+      render_content(node, options)
+    end
+  end
+
+  defp default_table_cell_node_renderer(node, options) do
+    content_tag(:td) do
+      render_content(node, options)
+    end
+  end
+
+  defp default_table_header_cell_node_renderer(node, options) do
+    content_tag(:th) do
       render_content(node, options)
     end
   end
