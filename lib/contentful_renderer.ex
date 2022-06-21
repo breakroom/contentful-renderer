@@ -289,13 +289,13 @@ defmodule ContentfulRenderer do
     ""
   end
 
-  def default_asset_hyperlink_node_renderer(node, options) do
+  defp default_asset_hyperlink_node_renderer(node, options) do
     Logger.warn("Using plain text renderer for asset-hyperlink node")
 
     render_content(node, options)
   end
 
-  def default_entry_hyperlink_node_renderer(node, options) do
+  defp default_entry_hyperlink_node_renderer(node, options) do
     Logger.warn("Using plain text renderer for entry-hyperlink node")
 
     render_content(node, options)
