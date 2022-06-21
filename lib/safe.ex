@@ -1,4 +1,5 @@
 defmodule ContentfulRenderer.SafeHelpers do
+  @moduledoc false
   import Phoenix.HTML, only: [html_escape: 1, raw: 1]
 
   def join_safes(list) when is_list(list) do
