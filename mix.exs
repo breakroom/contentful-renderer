@@ -7,7 +7,7 @@ defmodule ContentfulRenderer.MixProject do
     [
       app: :contentful_renderer,
       version: @version,
-      elixir: "~> 1.9",
+      elixir: "~> 1.12",
       deps: deps(),
       name: "Contentful Renderer",
       source_url: "https://github.com/breakroom/contentful_renderer",
