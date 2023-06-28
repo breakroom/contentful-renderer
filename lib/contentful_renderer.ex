@@ -204,7 +204,7 @@ defmodule ContentfulRenderer do
           )
 
         unknown_node ->
-          Logger.warn("Skipping rendering unexpected node type: #{unknown_node}")
+          Logger.warning("Skipping rendering unexpected node type: #{unknown_node}")
 
           fn _, _ -> nil end
       end
@@ -324,31 +324,31 @@ defmodule ContentfulRenderer do
   end
 
   defp default_embedded_entry_inline_node_renderer(_node, _options) do
-    Logger.warn("Using null renderer for embedded-entry-inline node")
+    Logger.warning("Using null renderer for embedded-entry-inline node")
 
     ""
   end
 
   defp default_embedded_entry_block_node_renderer(_node, _options) do
-    Logger.warn("Using null renderer for embedded-entry-block node")
+    Logger.warning("Using null renderer for embedded-entry-block node")
 
     ""
   end
 
   defp default_embedded_asset_block_node_renderer(_node, _options) do
-    Logger.warn("Using null renderer for embedded-asset-block node")
+    Logger.warning("Using null renderer for embedded-asset-block node")
 
     ""
   end
 
   defp default_asset_hyperlink_node_renderer(node, options) do
-    Logger.warn("Using plain text renderer for asset-hyperlink node")
+    Logger.warning("Using plain text renderer for asset-hyperlink node")
 
     render_content(node, options)
   end
 
   defp default_entry_hyperlink_node_renderer(node, options) do
-    Logger.warn("Using plain text renderer for entry-hyperlink node")
+    Logger.warning("Using plain text renderer for entry-hyperlink node")
 
     render_content(node, options)
   end
