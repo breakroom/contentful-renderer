@@ -1,13 +1,13 @@
 defmodule ContentfulRenderer.MixProject do
   use Mix.Project
 
-  @version "0.6.3"
+  @version "0.7.0"
 
   def project do
     [
       app: :contentful_renderer,
       version: @version,
-      elixir: "~> 1.12",
+      elixir: "~> 1.14",
       deps: deps(),
       name: "Contentful Renderer",
       source_url: "https://github.com/breakroom/contentful_renderer",
