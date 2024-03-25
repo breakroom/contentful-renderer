@@ -2,7 +2,8 @@ defmodule ContentfulRenderer do
   require Logger
 
   import Phoenix.HTML, only: [safe_to_string: 1, html_escape: 1, raw: 1]
-  import Phoenix.HTML.Tag, only: [content_tag: 2, content_tag: 3]
+  import PhoenixHTMLHelpers.Tag, only: [content_tag: 2, content_tag: 3]
+
   import ContentfulRenderer.SafeHelpers
 
   @doc """

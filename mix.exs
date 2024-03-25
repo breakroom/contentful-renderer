@@ -39,7 +39,8 @@ defmodule ContentfulRenderer.MixProject do
 
   defp deps do
     [
-      {:phoenix_html, "~> 2.0 or ~> 3.0"},
+      {:phoenix_html, "~> 2.0 or ~> 3.0 or ~> 4.0"},
+      {:phoenix_html_helpers, "~> 1.0"},
       {:slugify, "~> 1.3"},
       {:poison, "~> 4.0", only: :test},
       {:ex_doc, "~> 0.21", only: :dev, runtime: false}

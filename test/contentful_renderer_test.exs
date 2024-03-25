@@ -2,7 +2,7 @@ defmodule ContentfulRendererTest do
   use ExUnit.Case
   doctest ContentfulRenderer
 
-  import Phoenix.HTML.Tag, only: [content_tag: 2]
+  import PhoenixHTMLHelpers.Tag, only: [content_tag: 2]
 
   test "rendering a document with paragraphs and marks" do
     document = load_document("paragraphs.json")
